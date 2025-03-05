@@ -1,0 +1,447 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-image: url('building.png'); /* Replace with your background image */
+    background-size: cover; /* Cover the entire header */
+    background-position: center; /* Center the background image */
+    color: rgb(15, 35, 151);
+    padding: 20px;
+    font-family: Garamond;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.IntroBody{
+    color: rgb(15, 35, 151);
+    font-size: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.logo {
+    width: 100px; /* Adjust the size of the logo */
+    height: auto;
+    margin-right: 15px; /* Space between logo and title */
+}
+
+h1 {
+    margin: 0;
+}
+
+.navbar {
+    background-color: rgb(15, 35, 151); /* Semi-transparent background for navbar */
+    height: 30px;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    justify-content: right; /* Center the nav items */
+}
+
+.navbar li {
+    margin: 0 20px; /* Space between nav items */
+    list-style: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(18, 112, 236);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: italic;
+}
+
+.navbar a:hover {
+    text-decoration: None; 
+    color: rgb(151, 173, 245);
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column; /* Stack items vertically */
+        display: none; /* Hide by default */
+    }
+
+    .navbar ul.active {
+        display: flex; /* Show when active */
+    }
+
+    .navbar-toggle {
+        display: block; /* Show toggle button */
+        cursor: pointer;
+        color: white;
+        font-size: 20px;
+        margin: 10px;
+    }
+}
+
+.navbar-toggle {
+    display: none; /* Hide toggle button by default */
+}
+
+/* Show toggle button on smaller screens */
+@media (max-width: 768px) {
+    .navbar-toggle {
+        display: block; /* Show toggle button */
+    }
+}
+
+
+
+
+/*Personal Information*/
+
+.PersonalInformation{
+    text-align: center;
+    font-family: verdana;
+}
+
+
+.PersonalIn {
+    display: flex;
+    justify-content: space-between; /* Space between columns */
+}
+
+.column {
+    flex: 2; /* Each column takes equal space */
+    margin: 0 10px; /* Space between columns */
+}
+.line{
+    width: 50px;
+    color: rgb(15, 35, 151);
+    align-items: center;
+}
+label {
+    font-family: Verdana;
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+input {
+    font-family: 'Gill Sans';
+    width: 50%; /* Make inputs take full width of the column */
+    padding: 5px; /* Add some padding */
+    margin-bottom: 15px; /* Space between inputs */
+    border: 1px solid #3674B5; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners */
+    height: 30px; /* Height of the input field */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for border color and shadow */
+}
+
+
+
+
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Stack columns on small screens */
+    }
+}
+
+/*Certification & Licenses*/
+
+.CerandLis{
+    font-family: verdana;
+}
+
+
+.Cerlis {
+    display: flex;
+    justify-content: space-between; /* Space between columns */
+}
+
+.column {
+    flex: 2; /* Each column takes equal space */
+    margin: 0 10px; /* Space between columns */
+}
+
+label {
+    font-family: Verdana;
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+input {
+    font-family: Verdana;
+    width: 100%; /* Make inputs take full width of the column */
+    padding: 5px; /* Add some padding */
+    margin-bottom: 15px; /* Space between inputs */
+    border: 1px solid #3674B5; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners */
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Stack columns on small screens */
+    }
+}
+
+/*Educational Background*/
+
+.EducationBackground{
+    font-family: verdana;
+}
+
+
+.EducationBack {
+    display: flex;
+    justify-content: space-between; /* Space between columns */
+}
+
+.column {
+    flex: 2; /* Each column takes equal space */
+    margin: 0 10px; /* Space between columns */
+}
+
+label {
+    font-family: Verdana;
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+input {
+    font-family: Verdana;
+    width: 100%; /* Make inputs take full width of the column */
+    padding: 5px; /* Add some padding */
+    margin-bottom: 15px; /* Space between inputs */
+    border: 1px solid #3674B5; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners */
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Stack columns on small screens */
+    }
+}
+
+/*Government Information*/
+
+.GovernmentInform{
+    font-family: verdana;
+}
+
+
+.GovernInfo{
+    display: flex;
+    justify-content: space-between; /* Space between columns */
+}
+
+.column {
+    flex: 2; /* Each column takes equal space */
+    margin: 0 10px; /* Space between columns */
+}
+
+label {
+    font-family: Verdana;
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+input {
+    font-family: Verdana;
+    width: 100%; /* Make inputs take full width of the column */
+    padding: 5px; /* Add some padding */
+    margin-bottom: 15px; /* Space between inputs */
+    border: 1px solid #3674B5; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners */
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Stack columns on small screens */
+    }
+}
+
+/*Training Information*/
+
+.TrainingInfo{
+    font-family: verdana;
+}
+
+
+.TrainingInfo2{
+    display: flex;
+    justify-content: space-between; /* Space between columns */
+}
+
+.column {
+    flex: 2; /* Each column takes equal space */
+    margin: 0 10px; /* Space between columns */
+}
+
+label {
+    font-family: Verdana;
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+input {
+    font-family: Verdana;
+    width: 100%; /* Make inputs take full width of the column */
+    padding: 5px; /* Add some padding */
+    margin-bottom: 15px; /* Space between inputs */
+    border: 1px solid #3674B5; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners */
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Stack columns on small screens */
+    }
+}
+
+/*Work Information*/
+
+.WorkInfo{
+    font-family: verdana;
+}
+
+
+.WorkInfo2{
+    display: flex;
+    justify-content: space-between; /* Space between columns */
+}
+
+.column {
+    flex: 2; /* Each column takes equal space */
+    margin: 0 10px; /* Space between columns */
+}
+
+label {
+    font-family: Verdana;
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+input {
+    font-family: Verdana;
+    width: 100%; /* Make inputs take full width of the column */
+    padding: 5px; /* Add some padding */
+    margin-bottom: 15px; /* Space between inputs */
+    border: 1px solid #3674B5; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners */
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Stack columns on small screens */
+    }
+}
+
+
+/*Work Experience*/
+
+.WorkEx{
+    font-family: verdana;
+}
+
+
+.WorkEx2{
+    display: flex;
+    justify-content: space-between; /* Space between columns */
+}
+
+.column {
+    flex: 2; /* Each column takes equal space */
+    margin: 0 10px; /* Space between columns */
+}
+
+label {
+    font-family: Verdana;
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+input {
+    font-family: Verdana;
+    width: 100%; /* Make inputs take full width of the column */
+    padding: 5px; /* Add some padding */
+    margin-bottom: 15px; /* Space between inputs */
+    border: 1px solid #3674B5; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners */
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Stack columns on small screens */
+    }
+}
+
+
+/* Submit Button Styles */
+.submit-button {
+    background-color: #60adff; /* Blue background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    padding: 10px 15px; /* Padding for the button */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Hover Effect */
+.submit-button:hover {
+    background-color: rgb(15, 35, 151);
+}
+
+
+/* Footer*/
+.footer {
+    background-color: rgb(15, 35, 151); 
+    font-family: Arial, sans-serif;
+    color: white; 
+    padding: 20px;
+    text-align: center;
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+}
+
+.footer-content {
+    max-width: 1200px; 
+    margin: auto; 
+}
+
+
+
+.footer-content h2 {
+    margin: 10px 0; /* Margin for the heading */
+}
+
+.footer-content p {
+    margin: 5px 0; /* Margin for paragraphs */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .footer-logo {
+        width: 20px; /* Smaller logo on mobile */
+    }
+}
+
