@@ -395,6 +395,7 @@ input {
     color: white; /* White text color */
     border: none; /* Remove border */
     padding: 10px 15px; /* Padding for the button */
+    align-items: center;
     border-radius: 8px; /* Rounded corners */
     cursor: pointer; /* Pointer cursor on hover */
     font-size: 16px; /* Font size */
